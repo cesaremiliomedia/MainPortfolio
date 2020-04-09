@@ -3,6 +3,7 @@ import React from 'react'
 import pic03 from '../images/pic03.jpg'
 import Video from '../components/video'
 import PhotoGallery4 from '../components/photogallery4'
+import VisibilitySensor from 'react-visibility-sensor'
 
 class Main extends React.Component {
   render() {
@@ -29,13 +30,24 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Why I use React with Gatsby</h2>
-          <p>
-            Site speed is one of the factors Google uses in its search ranking
-            algorithm, and slow site speeds can have a negative snowball effect
-            on your SEO. Slower sites take longer to be crawled and indexed by
-            search engines, they have higher bounce rates, and lower conversion
-            rates, all of which will hurt your rankings.{' '}
-          </p>
+          <VisibilitySensor>
+            {({ isVisible }) => (
+              <Spring delay={300} to={{ opacity: isVisible ? 1 : 0 }}>
+                {({ opacity }) => (
+                  <div style={{ opacity }}>
+                    <p>
+                      Site speed is one of the factors Google uses in its search
+                      ranking algorithm, and slow site speeds can have a
+                      negative snowball effect on your SEO. Slower sites take
+                      longer to be crawled and indexed by search engines, they
+                      have higher bounce rates, and lower convessrsion rates,
+                      all of which will hurt your rankings.{' '}
+                    </p>
+                  </div>
+                )}
+              </Spring>
+            )}
+          </VisibilitySensor>
           <p>
             The core objective of ReactJS is providing the best possible
             rendering performance. Its strength comes from the focus on
