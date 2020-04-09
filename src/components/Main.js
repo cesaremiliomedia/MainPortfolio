@@ -141,22 +141,52 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Web Design</h2>
-          <ul style={{ listStyle: `none`, display: `in-line` }}>
-            <li>
-              <a
-                target="_blank "
-                href="https://cesaremiliomedia.com/demo-tacosite"
-              >
-                Sample Restaurant menu page (open new tab)
-              </a>
-            </li>
-            <li>
-              <a target="_blank " href="https://heroautobrokers.com">
-                Auto Brokerage (open new tab)
-              </a>
-            </li>
-          </ul>
+          <h1 className="major">Web Design</h1>
+          <div style={{ width: `100%`, margin: `auto` }}>
+            {' '}
+            <h2 className="major">current projects</h2>
+            <ul style={{ listStyle: `none`, display: `in-line` }}>
+              <li>
+                <a
+                  target="_blank "
+                  href="https://cesaremiliomedia.com/demo-tacosite"
+                >
+                  Sample Restaurant menu page (open new tab)
+                </a>
+              </li>
+              <li>
+                <a target="_blank " href="https://heroautobrokers.com">
+                  Auto Brokerage (open new tab)
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div style={{ width: `100%`, margin: `auto`, float: `left` }}>
+            <h2 className="major">Favorite Plugins</h2>
+            <ul>
+              <li>BootStrap</li>
+              <li>React-Spring (physics based animations)</li>
+              <li>Animate on Scroll (AOS)</li>
+              <li>FancyBox(modal actions)</li>
+              <li>Isotope (filtering)</li>
+              <li>Lodash</li>
+            </ul>
+          </div>
+          <div style={{ width: `100%`, margin: `auto`, float: `left` }}>
+            <h2 className="major">Favorite Application/ WebTools</h2>
+            <ul className="videos">
+              <h5 style={{ marginBottom: 0 }}>Wordpress</h5>
+              <li>Cyberduck</li>
+              <li>Local by Flywheel</li>
+            </ul>
+            <ul className="videos">
+              <h5 style={{ marginBottom: 0 }}>other</h5>
+              <li>Github</li>
+              <li>Netlify</li>
+              <li>VS Code</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
           {close}
         </article>
         {/* <article
