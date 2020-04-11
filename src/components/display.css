@@ -192,7 +192,7 @@ ul {
 
 .webdirections {
   color: #1c34ea;
-  font-size: 4vw;
+  font-size: 14px;
   font-weight: 600;
   grid-column: 1 / span 3;
   grid-row: 2;

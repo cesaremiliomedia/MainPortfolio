@@ -191,7 +191,28 @@ class Main extends React.Component {
                   </ol>
                   <ol></ol>
                 </div>
-                <p className="webdirections">By Web Directions</p>
+                <p className="webdirections">
+                  {' '}
+                  <div style={{ width: `100%`, margin: `auto` }}>
+                    {' '}
+                    <h2 className="major">current projects</h2>
+                    <ul style={{ listStyle: `none`, display: `in-line` }}>
+                      <li>
+                        <a
+                          target="_blank "
+                          href="https://cesaremiliomedia.com/demo-tacosite"
+                        >
+                          Sample Restaurant menu page (open new tab)
+                        </a>
+                      </li>
+                      <li>
+                        <a target="_blank " href="https://heroautobrokers.com">
+                          Auto Brokerage (open new tab)
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </p>
               </div>
             </div>
           </div>
