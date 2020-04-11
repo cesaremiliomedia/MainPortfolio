@@ -209,3 +209,6 @@ ul {
   background: transparent;
   margin-left: 6vw;
 }
+.scdown {
+  letter-spacing: 1px !important;
+}
