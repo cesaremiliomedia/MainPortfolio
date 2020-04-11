@@ -160,7 +160,7 @@ class Main extends React.Component {
             <div className="content">
               <div className="speakers">
                 <div>
-                  <h2>Favorite Plugins</h2>
+                  <h2 className="scdown">Favorite Plugins</h2>
                   <ol>
                     <li>BootStrap</li>
                     <li>React-Spring (physics based animations)</li>
@@ -171,7 +171,7 @@ class Main extends React.Component {
                   </ol>
                 </div>
                 <div>
-                  <h2>Favorite Applications/ WebTools</h2>
+                  <h2 className="scdown">Favorite Applications/ WebTools</h2>
                   <ol>
                     <li></li>
                     <h3 className="v">Wordpress</h3>
