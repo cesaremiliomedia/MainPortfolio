@@ -28,6 +28,19 @@ const FashionGallery = () => {
           }
         }
       }
+      Scenery: allFile(filter: { relativeDirectory: { eq: "Scenery" } }) {
+        nodes {
+          childImageSharp {
+            id
+            fixed(width: 200) {
+              ...GatsbyImageSharpFixed
+            }
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
     }
   `)
   //

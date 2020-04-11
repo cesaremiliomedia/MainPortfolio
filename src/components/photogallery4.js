@@ -6,12 +6,12 @@ import { Global, Container, Item } from './styles'
 import './display.css'
 import FashionGallery from '../hooks/fashionGallery'
 function ImagePage() {
-  const stuff = FashionGallery()
-  const arr = Object.keys(stuff)
-    .filter(v => stuff[v] != null)
-    .map(key => stuff[key])
+  const Folders = FashionGallery()
+  const arr = Object.keys(Folders)
+    .filter(v => Folders[v] != null)
+    .map(key => Folders[key])
 
-  const { Fashion, Portrait } = stuff
+  const { Fashion, Portrait, Scenery } = Folders
 
   const [open, set] = useState(false)
   const [data, setData] = useState()
@@ -77,11 +77,14 @@ function ImagePage() {
         }}
         className={open ? 'displayNone' : 'display'}
       >
-        <button className="btn" onClick={() => handleGallerySelect(Fashion)}>
-          Fashion
+        <button onClick={() => handleGallerySelect(Fashion)}>
+          Event/Fashion
         </button>
         <button className="btn" onClick={() => handleGallerySelect(Portrait)}>
-          Portait
+          Portrait
+        </button>
+        <button className="btn" onClick={() => handleGallerySelect(Scenery)}>
+          Scenery
         </button>
       </div>
     </>
