@@ -90,7 +90,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h3 className="major">Photography</h3>
+          <h3>Photography</h3>
 
           <PhotoGallery4 />
 
@@ -163,8 +163,8 @@ class Main extends React.Component {
                   <h2 className="scdown">Favorite Plugins</h2>
                   <ol>
                     <li>BootStrap</li>
-                    <li>React-Spring (physics based animations)</li>
-                    <li>Animate on Scroll (AOS)</li>
+                    <li>React Flip Toolkit</li>
+                    <li>React-Spring</li>
                     <li>FancyBox(modal actions)</li>
                     <li>Isotope (filtering)</li>
                     <li>Lodash</li>
@@ -213,6 +213,12 @@ class Main extends React.Component {
                     </ul>
                   </div>
                 </p>
+                <h3> Currently Learning</h3>
+                <ul>
+                  <li>NodeJs</li>
+                  <li>MongoDb</li>
+                  <li>Redux/Redux Tools</li>
+                </ul>
               </div>
             </div>
           </div>
