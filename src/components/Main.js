@@ -212,13 +212,13 @@ class Main extends React.Component {
                       </li>
                     </ul>
                   </div>
+                  <h3> Currently Learning</h3>
+                  <ul>
+                    <li>NodeJs</li>
+                    <li>MongoDb</li>
+                    <li>Redux/Redux Tools</li>
+                  </ul>
                 </p>
-                <h3> Currently Learning</h3>
-                <ul>
-                  <li>NodeJs</li>
-                  <li>MongoDb</li>
-                  <li>Redux/Redux Tools</li>
-                </ul>
               </div>
             </div>
           </div>
