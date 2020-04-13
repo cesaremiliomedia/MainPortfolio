@@ -212,7 +212,14 @@ class Main extends React.Component {
                       </li>
                     </ul>
                   </div>
-                  <h3> Currently Learning</h3>
+                  <h2
+                    style={{
+                      marginBottom: 0,
+                    }}
+                  >
+                    {' '}
+                    Currently Learning
+                  </h2>
                   <ul style={{ listStyle: `none`, display: `in-line` }}>
                     <li>NodeJs</li>
                     <li>MongoDb</li>
