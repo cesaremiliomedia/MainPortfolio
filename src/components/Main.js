@@ -195,7 +195,7 @@ class Main extends React.Component {
                   {' '}
                   <div style={{ width: `100%`, margin: `auto` }}>
                     {' '}
-                    <h2 className="major">current projects</h2>
+                    <h2>current projects</h2>
                     <ul style={{ listStyle: `none`, display: `in-line` }}>
                       <li>
                         <a
@@ -213,7 +213,7 @@ class Main extends React.Component {
                     </ul>
                   </div>
                   <h3> Currently Learning</h3>
-                  <ul>
+                  <ul style={{ listStyle: `none`, display: `in-line` }}>
                     <li>NodeJs</li>
                     <li>MongoDb</li>
                     <li>Redux/Redux Tools</li>
