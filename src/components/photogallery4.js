@@ -49,9 +49,7 @@ function ImagePage() {
   return (
     <>
       <Global />
-      <h1 className="slides" data-heading="Slide">
-        Galleries
-      </h1>
+
       <Container
         onClick={() => set(open => !open)}
         style={{ ...rest, width: size, height: size }}
