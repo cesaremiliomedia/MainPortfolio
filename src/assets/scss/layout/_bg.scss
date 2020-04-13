@@ -64,7 +64,7 @@
   .body.is-article-visible & {
     &:after {
       @include vendor('transform', 'scale(1.0825)');
-      // @include vendor('filter', 'blur(0.2rem)');
+      @include vendor('filter', 'blur(0.2rem)');
     }
   }
 
