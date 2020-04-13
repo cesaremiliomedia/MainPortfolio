@@ -29,7 +29,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Why I use React with Gatsby</h2>
+          <h3 className="major">Why I use React with Gatsby</h3>
           <VisibilitySensor>
             {({ isVisible }) => (
               <Spring delay={300} to={{ opacity: isVisible ? 1 : 0 }}>
@@ -90,7 +90,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Photography</h2>
+          <h3 className="major">Photography</h3>
 
           <PhotoGallery4 />
 
@@ -104,7 +104,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Videography</h2>
+          <h3 className="major">Videography</h3>
           <span className="image main"></span>
           <ul style={{ listStyle: `none`, display: `in-line` }}>
             <li className="videos">

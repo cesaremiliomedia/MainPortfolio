@@ -13,12 +13,12 @@ const Header = props => (
       <div className="inner">
         <h1>Web Design and Media Portfolio</h1>
         <div className="back">
-          <p className="slides">
+          <h3>
             ReactJS-Javascript-Jquery-HTML-SCSS-CSS-GraphQL
             {/* <br />
         for free under the{' '}
         <a href="https://html5up.net/license">Creative Commons</a> license. */}
-          </p>
+          </h3>
         </div>
         <p className="glow">
           I am a self taught webdesigner currently focused on designing with the
