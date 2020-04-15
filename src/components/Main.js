@@ -104,7 +104,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h1 style={{ marginBottom: `3px` }}>Videography</h1>
+          <h1 style={{ marginBottom: `3px` }}>Vdideography</h1>
           <div>
             <VisibilitySensor>
               {({ isVisible }) => (
