@@ -175,9 +175,19 @@ class Main extends React.Component {
             </div>
             <div className="content">
               <div className="speakers">
-                <div>
-                  <h2 className="scdown">Favorite Plugins</h2>
-                  <ol>
+                <div style={{ textAlign: `center` }}>
+                  <h1
+                    style={{
+                      fontSize: `10px`,
+                      letterSpacing: `2px`,
+                      textDecoration: `underline`,
+                      textAlign: `center`,
+                      marginBottom: 2,
+                    }}
+                  >
+                    Favorite Plugins
+                  </h1>
+                  <ol style={{ textAlign: `left` }}>
                     <li>BootStrap</li>
                     <li>React Flip Toolkit</li>
                     <li>React-Spring</li>
@@ -186,16 +196,26 @@ class Main extends React.Component {
                     <li>Lodash</li>
                   </ol>
                 </div>
-                <div>
-                  <h2 className="scdown">Favorite Applications/ WebTools</h2>
+                <div style={{ textAlign: `center` }}>
+                  <h1
+                    style={{
+                      fontSize: `10px`,
+                      letterSpacing: `2px`,
+                      textDecoration: `underline`,
+                      textAlign: `center`,
+                      marginBottom: 1,
+                    }}
+                  >
+                    Favorite Applications/ WebTools
+                  </h1>
                   <ol>
                     <li></li>
-                    <h3 className="v">Wordpress</h3>
+                    <h3 style={{ marginBottom: 0 }}>Wordpress</h3>
                     <ul>
                       <li>Cyberduck</li>
                       <li>Local by Flywheel</li>
                     </ul>
-                    <h3 className="v">Other</h3>
+                    <h3>Other</h3>
 
                     <ul>
                       {' '}
