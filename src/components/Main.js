@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic03 from '../images/pic03.jpg'
+
 import Video from '../components/video'
 import PhotoGallery4 from '../components/photogallery4'
 import VisibilitySensor from 'react-visibility-sensor'
