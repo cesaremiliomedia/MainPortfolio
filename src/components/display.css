@@ -15,13 +15,12 @@
 
 .display {
   opacity: 1;
-  transition: opacity 0.2s ease-out;
-  transition-delay: 0.2s;
+  transition: opacity 1s ease-out;
+  transition-delay: 0.1s;
 }
 
 .displayNone {
   opacity: 0;
-  transition: opacity 0.3s ease-out;
 }
 
 .slides {
