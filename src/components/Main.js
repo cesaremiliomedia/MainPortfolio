@@ -105,45 +105,61 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h3 className="major">Videography</h3>
-          <span className="image main"></span>
-          <ul style={{ listStyle: `none`, display: `in-line` }}>
-            <li className="videos">
-              <Video
-                videoSrcURL="https://player.vimeo.com/video/365942198"
-                videoTitle="Official Music Video on YouTube"
-              />
-            </li>
-            <li className="videos">
-              <Video
-                videoSrcURL="https://player.vimeo.com/video/355282322"
-                videoTitle="Official Music Video on YouTube"
-              />
-            </li>
-            <li className="videos">
-              <Video
-                videoSrcURL="https://player.vimeo.com/video/332098006"
-                videoTitle="Official Music Video on YouTube"
-              />
-            </li>
-            <li className="videos">
-              <Video
-                videoSrcURL="https://player.vimeo.com/video/320889549"
-                videoTitle="Official Music Video on YouTube"
-              />
-            </li>
-            <li className="videos">
-              <Video
-                videoSrcURL="https://player.vimeo.com/video/316364760"
-                videoTitle="Official Music Video on YouTube"
-              />
-            </li>
-            <li className="videos">
-              <Video
-                videoSrcURL="https://player.vimeo.com/video/316739025"
-                videoTitle="Official Music Video on YouTube"
-              />
-            </li>
-          </ul>
+          <div>
+            <VisibilitySensor>
+              {({ isVisible }) => (
+                <Spring
+                  delay={1000}
+                  duration={1000}
+                  to={{ opacity: isVisible ? 1 : 0 }}
+                >
+                  {({ opacity }) => (
+                    <div style={{ opacity }}>
+                      <div style={{ visibility: 'hidden' }}>yo</div>
+                      <ul>
+                        <li className="videos">
+                          <Video
+                            videoSrcURL="https://player.vimeo.com/video/365942198"
+                            videoTitle="Official Music Video on YouTube"
+                          />
+                        </li>
+                        <li className="videos">
+                          <Video
+                            videoSrcURL="https://player.vimeo.com/video/355282322"
+                            videoTitle="Official Music Video on YouTube"
+                          />
+                        </li>
+                        <li className="videos">
+                          <Video
+                            videoSrcURL="https://player.vimeo.com/video/332098006"
+                            videoTitle="Official Music Video on YouTube"
+                          />
+                        </li>
+                        <li className="videos">
+                          <Video
+                            videoSrcURL="https://player.vimeo.com/video/320889549"
+                            videoTitle="Official Music Video on YouTube"
+                          />
+                        </li>
+                        <li className="videos">
+                          <Video
+                            videoSrcURL="https://player.vimeo.com/video/316364760"
+                            videoTitle="Official Music Video on YouTube"
+                          />
+                        </li>
+                        <li className="videos">
+                          <Video
+                            videoSrcURL="https://player.vimeo.com/video/316739025"
+                            videoTitle="Official Music Video on YouTube"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+                </Spring>
+              )}
+            </VisibilitySensor>
+          </div>
           {close}
         </article>
         <article
