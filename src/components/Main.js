@@ -199,7 +199,7 @@ class Main extends React.Component {
                 <div style={{ textAlign: `center` }}>
                   <h1
                     style={{
-                      fontSize: `10px`,
+                      fontSize: `11px`,
                       letterSpacing: `2px`,
                       textDecoration: `underline`,
                       textAlign: `center`,
@@ -210,12 +210,14 @@ class Main extends React.Component {
                   </h1>
                   <ol>
                     <li></li>
-                    <h3 style={{ marginBottom: 0 }}>Wordpress</h3>
+                    <h3 style={{ fontSize: `10px`, marginBottom: 0 }}>
+                      Wordpress
+                    </h3>
                     <ul>
                       <li>Cyberduck</li>
                       <li>Local by Flywheel</li>
                     </ul>
-                    <h3 style={{ marginBottom: 0 }}>Other</h3>
+                    <h3 style={{ fontSize: `10px`, marginBottom: 0 }}>Other</h3>
 
                     <ul>
                       {' '}
