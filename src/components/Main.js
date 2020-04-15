@@ -109,7 +109,7 @@ class Main extends React.Component {
             <VisibilitySensor>
               {({ isVisible }) => (
                 <Spring
-                  delay={1000}
+                  delay={1200}
                   duration={1000}
                   to={{ opacity: isVisible ? 1 : 0 }}
                 >
@@ -208,7 +208,6 @@ class Main extends React.Component {
                   <ol></ol>
                 </div>
                 <p className="webdirections">
-                  {' '}
                   <div style={{ width: `100%`, margin: `auto` }}>
                     {' '}
                     <h2>current projects</h2>
@@ -226,21 +225,27 @@ class Main extends React.Component {
                           Auto Brokerage (open new tab)
                         </a>
                       </li>
+                    </ul>{' '}
+                    <h2
+                      style={{
+                        marginBottom: 0,
+                      }}
+                    >
+                      {' '}
+                      Currently Learning
+                    </h2>
+                    <ul
+                      style={{
+                        listStyle: `none`,
+                        display: `in-line`,
+                        marginBottom: 0,
+                      }}
+                    >
+                      <li>NodeJs</li>
+                      <li>MongoDb</li>
+                      <li>Redux/Redux Tools</li>
                     </ul>
                   </div>
-                  <h2
-                    style={{
-                      marginBottom: 0,
-                    }}
-                  >
-                    {' '}
-                    Currently Learning
-                  </h2>
-                  <ul style={{ listStyle: `none`, display: `in-line` }}>
-                    <li>NodeJs</li>
-                    <li>MongoDb</li>
-                    <li>Redux/Redux Tools</li>
-                  </ul>
                 </p>
               </div>
             </div>
