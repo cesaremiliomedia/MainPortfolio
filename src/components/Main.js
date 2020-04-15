@@ -215,7 +215,7 @@ class Main extends React.Component {
                       <li>Cyberduck</li>
                       <li>Local by Flywheel</li>
                     </ul>
-                    <h3>Other</h3>
+                    <h3 style={{ marginBottom: 0 }}>Other</h3>
 
                     <ul>
                       {' '}
