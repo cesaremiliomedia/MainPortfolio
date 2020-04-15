@@ -157,7 +157,6 @@ h1 {
 .content {
   margin: auto;
 }
-
 h2,
 ol {
   color: #ad35e2;
@@ -211,5 +210,7 @@ ul {
   margin-left: 6vw;
 }
 .scdown {
+  color: #ad35e2;
+
   letter-spacing: 1px !important;
 }
