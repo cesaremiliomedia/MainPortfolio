@@ -16,7 +16,7 @@
 .display {
   opacity: 1;
   transition: opacity 1s ease-out;
-  transition-delay: 0.1s;
+  transition-delay: 0.5s;
 }
 
 .displayNone {
