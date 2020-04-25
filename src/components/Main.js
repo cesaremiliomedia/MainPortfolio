@@ -150,15 +150,20 @@ class Main extends React.Component {
                 )}
               </VisibilitySensor>
             </div>
+            <div></div>
             <VisibilitySensor>
               {({ isVisible }) => (
                 <Spring
-                  delay={1200}
+                  delay={900}
                   duration={1000}
-                  to={{ opacity: isVisible ? 1 : 0 }}
+                  from={{ opacity: 0, marginRight: -100 }}
+                  to={{
+                    opacity: isVisible ? 1 : 0,
+                    marginRight: isVisible ? 0 : -100,
+                  }}
                 >
-                  {({ opacity }) => (
-                    <div style={{ opacity }}>
+                  {props => (
+                    <div style={{ ...props }}>
                       <div style={{ visibility: 'hidden' }}>yo</div>
                       <ul>
                         <li className="videos">
