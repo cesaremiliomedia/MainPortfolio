@@ -108,17 +108,32 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h1 style={{ marginBottom: `3px` }}>Videography</h1>
+          <h1 style={{ marginBottom: `10px` }}>Videography</h1>
           <div>
-            <p>
-              All videos were directed, shot and edited by me. Adobe Premiere
-              Pro and After Effects are some of my favorite programs I use to
-              edit film. Some of the concepts within videography that I
-              understand are Stabilization, Frame Rate, Shutter Speed, Color
-              Grading, Color Correction, and Lighting. I am also very fascinated
-              with motion graphics and have experience animating posters and
-              slideshows for web and social media.{' '}
-            </p>
+            <div>
+              {' '}
+              <VisibilitySensor>
+                {({ isVisible }) => (
+                  <Spring delay={600} to={{ opacity: isVisible ? 1 : 0 }}>
+                    {({ opacity }) => (
+                      <div style={{ opacity }}>
+                        <p>
+                          All videos were directed, shot and edited by me. Adobe
+                          Premiere Pro and After Effects are some of my favorite
+                          programs I use to edit film. Some of the concepts
+                          within videography that I understand are
+                          Stabilization, Frame Rate, Shutter Speed, Color
+                          Grading, Color Correction, and Lighting. I am also
+                          very fascinated with motion graphics and have
+                          experience animating posters and slideshows for web
+                          and social media.{' '}
+                        </p>
+                      </div>
+                    )}
+                  </Spring>
+                )}
+              </VisibilitySensor>
+            </div>
             <VisibilitySensor>
               {({ isVisible }) => (
                 <Spring
