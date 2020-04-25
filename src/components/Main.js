@@ -30,7 +30,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h3 className="major">Why I use React with Gatsby</h3>
-          <VisibilitySensor>
+          <VisibilitySensor once partialVisibility>
             {({ isVisible }) => (
               <Spring delay={300} to={{ opacity: isVisible ? 1 : 0 }}>
                 {({ opacity }) => (
@@ -156,10 +156,9 @@ class Main extends React.Component {
                 <Spring
                   delay={900}
                   duration={1000}
-                  from={{ opacity: 0, marginRight: -100 }}
+                  from={{ opacity: 0 }}
                   to={{
                     opacity: isVisible ? 1 : 0,
-                    marginRight: isVisible ? 0 : -100,
                   }}
                 >
                   {props => (
