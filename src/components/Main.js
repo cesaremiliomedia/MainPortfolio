@@ -108,10 +108,10 @@ class Main extends React.Component {
                       </div>
                     )}
                   </Spring>
-                  <PhotoGallery4 />
                 </div>
               )}
             </VisibilitySensor>
+            <PhotoGallery4 />
           </div>
 
           {close}
