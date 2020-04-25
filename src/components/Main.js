@@ -91,7 +91,11 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h1 style={{ marginBottom: `3px` }}>Photography</h1>
-
+          <p>
+            All photos on this page were shot and edited by me using Adobe
+            Lightroom and Photoshop. These photos were taken at various events
+            dating from 2016-2019. I currently use the Canon 5d Mark IV.{' '}
+          </p>
           <PhotoGallery4 />
 
           {close}
@@ -106,6 +110,15 @@ class Main extends React.Component {
         >
           <h1 style={{ marginBottom: `3px` }}>Videography</h1>
           <div>
+            <p>
+              All videos were directed, shot and edited by me. Adobe Premiere
+              Pro and After Effects are some of my favorite programs I use to
+              edit film. Some of the concepts within videography that I
+              understand are Stabilization, Frame Rate, Shutter Speed, Color
+              Grading, Color Correction, and Lighting. I am also very fascinated
+              with motion graphics and have experience animating posters and
+              slideshows for web and social media.{' '}
+            </p>
             <VisibilitySensor>
               {({ isVisible }) => (
                 <Spring
