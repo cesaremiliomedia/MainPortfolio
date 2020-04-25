@@ -91,12 +91,28 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h1 style={{ marginBottom: `3px` }}>Photography</h1>
-          <p>
-            All photos on this page were shot and edited by me using Adobe
-            Lightroom and Photoshop. These photos were taken at various events
-            dating from 2016-2019. I currently use the Canon 5d Mark IV.{' '}
-          </p>
-          <PhotoGallery4 />
+          <div>
+            <VisibilitySensor>
+              {({ isVisible }) => (
+                <div>
+                  {' '}
+                  <Spring delay={600} to={{ opacity: isVisible ? 1 : 0 }}>
+                    {({ opacity }) => (
+                      <div style={{ opacity }}>
+                        <p>
+                          All photos on this page were shot and edited by me
+                          using Adobe Lightroom and Photoshop. These photos were
+                          taken at various events dating from 2016-2019. I
+                          currently use the Canon 5d Mark IV.{' '}
+                        </p>
+                      </div>
+                    )}
+                  </Spring>
+                  <PhotoGallery4 />
+                </div>
+              )}
+            </VisibilitySensor>
+          </div>
 
           {close}
         </article>
