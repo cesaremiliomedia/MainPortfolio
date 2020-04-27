@@ -20,17 +20,17 @@ const Header = props => (
         <a href="https://html5up.net/license">Creative Commons</a> license. */}
           </h3>
         </div>
-        <p className="glow">
+        {/* <p className="glow">
           I am a self taught webdesigner currently focused on designing with the
           React JS library. In my opinion, being able to use JSX as well as
           React’s component based approach makes readability of code quicker,
           simplier, and more robust. Being able to reuse components as well as
           modify the props passed into them allows the ability to create complex
           and interactive UI.
-        </p>
+        </p> */}
       </div>
     </div>
-    <nav>
+    <nav className="main-menu">
       <ul>
         <li>
           <button
@@ -38,7 +38,7 @@ const Header = props => (
               props.onOpenArticle('intro')
             }}
           >
-            Why Gatsby/React?
+            About me
           </button>
         </li>
         <li>
@@ -53,7 +53,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle('video')
             }}
           >
             Videography

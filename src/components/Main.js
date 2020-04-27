@@ -24,7 +24,7 @@ class Main extends React.Component {
       >
         <article
           id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+          className={`${this.props.article === 'about' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
@@ -322,66 +322,32 @@ class Main extends React.Component {
           </div>
           {close}
         </article>
-        {/* <article
+        <article
           id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
+          className={`${this.props.article === 'intro' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li>
-                <input type="submit" value="Send Message" className="special" />
-              </li>
-              <li>
-                <input type="reset" value="Reset" />
-              </li>
-            </ul>
-          </form>
-          <ul className="icons">
-            <li>
-              <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
-              >
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
-                className="icon fa-github"
-              >
-                <span className="label">GitHub</span>
-              </a>
-            </li>
-          </ul>
+          <h1 className="major">About me</h1>
+          <p>
+            My journey as an entrepreneur and freelancer while living in Austin,
+            Tx has led me to develop web development skills and acquire
+            experience with graphic design, video production, marketing and
+            advertising.
+          </p>
+          <p>
+            I am a self taught webdesigner currently focused on designing with
+            the React JS library. In my opinion, being able to use JSX as well
+            as React’s component based approach makes readability of code
+            quicker, simplier, and more robust. Being able to reuse components
+            as well as modify the props passed into them allows the ability to
+            create complex and interactive UI. I also have a lot of experience
+            in Adobe Suite and a strong focus in Adobe After Effects and Adobe
+            Illustrator/Photoshop
+          </p>
           {close}
-        </article> */}
+        </article>
       </div>
     )
   }
