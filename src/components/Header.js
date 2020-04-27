@@ -53,7 +53,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('work')
+              props.onOpenArticle('video')
             }}
           >
             Videography
