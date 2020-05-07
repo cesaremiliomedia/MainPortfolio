@@ -42,15 +42,30 @@ const Header = props => (
           </button>
         </li>
         <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('work')
-            }}
-          >
-            Photography
-          </button>
+          <button>Media</button>
+          <ul>
+            <li>
+              {' '}
+              <button
+                onClick={() => {
+                  props.onOpenArticle('work')
+                }}
+              >
+                Photography
+              </button>
+              <li>
+                <button
+                  onClick={() => {
+                    props.onOpenArticle('video')
+                  }}
+                >
+                  Videography
+                </button>
+              </li>
+            </li>
+          </ul>
         </li>
-        <li>
+        {/* <li>
           <button
             onClick={() => {
               props.onOpenArticle('video')
@@ -58,7 +73,7 @@ const Header = props => (
           >
             Videography
           </button>
-        </li>
+        </li> */}
         <li>
           <button
             onClick={() => {
@@ -67,6 +82,27 @@ const Header = props => (
           >
             Web
           </button>
+          <ul>
+            <li>
+              {' '}
+              <button
+                onClick={() => {
+                  props.onOpenArticle('contact')
+                }}
+              >
+                Web
+              </button>
+              <li>
+                <button
+                  onClick={() => {
+                    props.onOpenArticle('contact')
+                  }}
+                >
+                  Web
+                </button>
+              </li>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
