@@ -92,7 +92,7 @@ const Header = props => (
               >
                 Web
               </button>
-              <li>
+              {/* <li>
                 <button
                   onClick={() => {
                     props.onOpenArticle('contact')
@@ -100,7 +100,7 @@ const Header = props => (
                 >
                   Web
                 </button>
-              </li>
+              </li> */}
             </li>
           </ul>
         </li>
