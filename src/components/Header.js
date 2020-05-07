@@ -82,7 +82,7 @@ const Header = props => (
           >
             Web
           </button>
-          <ul>
+          {/* <ul>
             <li>
               {' '}
               <button
@@ -102,7 +102,7 @@ const Header = props => (
                 </button>
               </li> */}
             </li>
-          </ul>
+          </ul> */}
         </li>
       </ul>
     </nav>
