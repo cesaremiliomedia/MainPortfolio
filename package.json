@@ -5,7 +5,7 @@
   "author": "Hunter Chang",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
-    "gatsby": "^2.19.5",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-manifest": "^2.2.38",
     "gatsby-plugin-react-helmet": "^3.1.21",
